@@ -3,7 +3,7 @@
 ## Logistics
 
 - Instructor: [Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang)
-- Time & Place: Tue & Thu 10:30am-11:45am, TBA
+- Time & Place: Tue & Thu 10:30am-11:45am, Rm. 1220, Bldg. E3-1
 - Websites: https://github.com/kaist-cp/cs420, https://gg.kaist.ac.kr/course/3/
 - Announcements: in [issue
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
@@ -24,12 +24,17 @@ TBA
 
 ### Textbook
 
-TBA
+- Slides (TBA). In the meantime, please see the [slide for a CS320 guest
+  lecture](https://docs.google.com/presentation/d/1HqkeVkNLffpafZzb-lU5jVoxVC0HYqLag7T9GNiGCRQ/edit?usp=sharing).
+- [The LLVM Compiler Infrastructure](https://github.com/llvm/llvm-project)
 
 
 ### Tools
 
-TBA
+- KECC: KAIST Educational C Compiler (TBA)
+
+- We will use [Rust](https://www.rust-lang.org/) as the language of implementation, because its
+  ownership type system greatly simplifies the development of large-scale system software.
 
 
 ## Prerequisites
@@ -54,7 +59,7 @@ TBA
 
 ### Homework (80%)
 
-- Implementing translations and optimizations on KECC: KAIST Educational C Compiler
+You will implement translations and optimizations on KECC.
 
 ### Midterm exam (20%)
 
@@ -85,6 +90,10 @@ Please sign [KAIST School of Computing Honor Code](https://gg.kaist.ac.kr/assign
   tracker](https://github.com/kaist-cp/cs420/issues) and technical questions in [the
   helpdesk](https://github.com/kaist-cp/helpdesk).  Any questions failing to do so
   (e.g. email questions on course materials) will not be answered.
+
+    + I'm requiring you to ask questions online first for two reasons. First, clearly writing a
+      question is the first step to reach an answer. Second, you can benefit from questions and
+      answers of other students.
 
 - Emails to the instructor or TAs should begin with "CS420:" in the subject line, followed by a
   brief description of the purpose of your email.  The content should at least contain your name and
