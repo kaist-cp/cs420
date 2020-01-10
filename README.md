@@ -1,4 +1,4 @@
-# KAIST CS420: Compiler Design
+# KAIST CS420: Compiler Design (2020 Spring)
 
 ## Logistics
 
@@ -22,12 +22,12 @@ human and machine is fundamentally wide, compilers have been constructed and wid
 beginning of the history of computing. Even, the first practical compiler predates the first
 practical operating systems (according to Wikipedia)!
 
-**In response to industry shifts, new compilers should be written and rewritten.** First, human wants
-to express more and more complex idea, especially in the era of artificial intelligence and big
-data. Second, machine changes in response to physics (e.g. the ending of Dennard scaling and Moore's
-law) and industrial needs (e.g. Internet of Things and distributed systems). New compilers should be
-constructed to close the new gap between changing human and changing machine. For this reason,
-industrial needs for (and salary of) compiler engineers have been constantly high.
+**In response to industry shifts, new compilers should be written and written again.** First, human
+wants to express more and more complex idea, especially in the era of artificial intelligence and
+big data. Second, machine changes in response to physics (e.g. the ending of Dennard scaling and
+Moore's law) and industrial needs (e.g. Internet of Things and distributed systems). New compilers
+should be constructed to close the new gap between changing human and changing machine. For this
+reason, industrial needs for (and salary of) compiler engineers have been constantly high.
 
 
 ### Goal
@@ -37,19 +37,30 @@ to benefit from the provided skeleton code of a clean slate educational compiler
 KAIST Educational C Compiler* (think: [KENS](https://an.kaist.ac.kr/kensv3-doc/) for networking or
 [Pintos](https://pintos-os.org/), [xv6](https://pdos.csail.mit.edu/6.828/2019/xv6.html) for
 operating systems). We are going to discuss parsing only briefly, because the topic is assumed to be
-dealt with CS322 (Formal Languages and Automata). We will focus on translation from human-friendly
-form to machine-friendly form, and compiler optimizations. Specifically, we will discuss (1) how to
-transform a C program to an [intermediate representation
-(IR)](https://en.wikipedia.org/wiki/Intermediate_representation); (2) how to perform register
-promotion, static single assignment, global value numbering, and register allocation optimizations
-on the IR; and (3) how to transform an IR program to an
+dealt with in CS322 (Formal Languages and Automata). We will focus on translation from
+human-friendly form to machine-friendly form, and compiler optimizations. Specifically, we will
+discuss (1) how to transform a C program to an
+[SSA](https://en.wikipedia.org/wiki/Static_single_assignment_form)-based [intermediate
+representation (IR)](https://en.wikipedia.org/wiki/Intermediate_representation); (2) how to perform
+register promotion, static single assignment, global value numbering, and register allocation
+optimizations on the IR; and (3) how to transform an IR program to a
 [RISC-V](https://en.wikipedia.org/wiki/RISC-V) assembly program. KECC will provide a significant
-amount of bootstrapping code so that you can focus on the topic of this course.
+amount of skeleton code so that you can focus on the topic of this course.
 
-**We will also learn a theory of compiler briefly** in a few sessions. We will focus on the
-correctness of compiler. In general, in what sense a compiler is correct, and how to prove it?
-Specifically, how to prove the correctness of KECC's transformations and optimizations? As it will
-turn out, this compiler correctness theory will greatly help you efficiently build your compiler.
+**We will also briefly discuss the recent trends of compiler construction.** I see two crucial
+recent trends: script languages and parallelism. (1) Scripting languages like JavaScript and Python,
+unlike C, should be compiled (or interpreted) at run-time, and therefore, there is no clear
+distinction of compile- and run-time. It is a challenge in that compile time should also be
+optimized, but it is also an opportunity in that compile may gather and benefit from run-time
+information. (2) It is crucial to exploit the massive parallelism of modern applications like deep
+learning and high-performance computing (HPC), because they require so huge computation. Due to the
+complexity of workloads, their parallelism should be automatically discovered and exploited by
+compilers, which is a big challenge.
+
+**We will also briefly study the theory of compiler.** We will focus on the correctness of
+compiler. In general, in what sense a compiler is correct, and how to prove it?  Specifically, how
+to prove the correctness of KECC's transformations and optimizations? As it will turn out, this
+compiler correctness theory will greatly help you efficiently build your own compiler.
 
 
 ### Textbook
@@ -64,7 +75,8 @@ turn out, this compiler correctness theory will greatly help you efficiently bui
 - KECC: KAIST Educational C Compiler (TBA)
 
 - We will use [Rust](https://www.rust-lang.org/) as the language of implementation, because its
-  ownership type system greatly simplifies the development of large-scale system software.
+  ownership type system greatly simplifies the development of large-scale system software. If you
+  want to "opt out", you can also use FFI and implement your compiler in C/C++.
 
 
 ## Prerequisites
@@ -92,8 +104,8 @@ turn out, this compiler correctness theory will greatly help you efficiently bui
 
 You will implement translations and optimizations on KECC. All homework submissions will be
 automatically graded online so that you can immediately see your score. If your compiler is correct
-and the generated assemblies perform comparably with those generated by `gcc -O1`, you're going to
-get A+ (if not A\#).
+and the generated assemblies perform faster than those generated by `gcc -O0` (`gcc -O1`), you're
+going to get A+ (A\#, respectively).
 
 
 ### Midterm exam (20%)
