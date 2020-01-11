@@ -37,9 +37,9 @@ to benefit from the provided skeleton code of a clean slate educational compiler
 KAIST Educational C Compiler* (think: [KENS](https://an.kaist.ac.kr/kensv3-doc/) for networking or
 [Pintos](https://pintos-os.org/), [xv6](https://pdos.csail.mit.edu/6.828/2019/xv6.html) for
 operating systems). We are going to discuss parsing only briefly, because the topic is assumed to be
-dealt with in CS322 (Formal Languages and Automata). We will focus on translation from
-human-friendly form to machine-friendly form, and compiler optimizations. Specifically, we will
-discuss (1) how to transform a C program to an
+dealt with in CS322: Formal Languages and Automata. (You don't need to know parsing to take this
+course, though.) We will focus on translation from human-friendly form to machine-friendly form, and
+compiler optimizations. Specifically, we will discuss (1) how to transform a C program to an
 [SSA](https://en.wikipedia.org/wiki/Static_single_assignment_form)-based [intermediate
 representation (IR)](https://en.wikipedia.org/wiki/Intermediate_representation); (2) how to perform
 register promotion, static single assignment, global value numbering, and register allocation
