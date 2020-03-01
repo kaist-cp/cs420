@@ -65,7 +65,7 @@ compiler correctness theory will greatly help you efficiently build your own com
 
 ### Textbook
 
-- [Slides](https://docs.google.com/presentation/d/1SqtU-Cn60Sd1jkbO0OSsRYKPMIkul0eZoYG9KpMugFE/edit?usp=sharing)
+- [Slides](https://docs.google.com/presentation/d/1SqtU-Cn60Sd1jkbO0OSsRYKPMIkul0eZoYG9KpMugFE/edit?usp=sharing).  If you have any suggestions to improve the slide, please leave comments in the slide.
 - [The LLVM Compiler Infrastructure](https://github.com/llvm/llvm-project)
 
 
