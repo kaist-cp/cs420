@@ -3,6 +3,7 @@
 ## Logistics
 
 - Instructor: [Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang)
+- Teaching assistant: [Chunmyong Park](https://cp.kaist.ac.kr/chunmyong.park)
 - Time & Place: Tue & Thu 10:30am-11:45am, Rm. 1220, Bldg. E3-1
 - Websites: https://github.com/kaist-cp/cs420, https://gg.kaist.ac.kr/course/3/
 - Announcements: in [issue
