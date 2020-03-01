@@ -65,18 +65,19 @@ compiler correctness theory will greatly help you efficiently build your own com
 
 ### Textbook
 
-- Slides (TBA). In the meantime, please see the [slide for a CS320 guest
-  lecture](https://docs.google.com/presentation/d/1HqkeVkNLffpafZzb-lU5jVoxVC0HYqLag7T9GNiGCRQ/edit?usp=sharing).
+- [Slides](https://docs.google.com/presentation/d/1SqtU-Cn60Sd1jkbO0OSsRYKPMIkul0eZoYG9KpMugFE/edit?usp=sharing)
 - [The LLVM Compiler Infrastructure](https://github.com/llvm/llvm-project)
 
 
 ### Tools
 
-- KECC: KAIST Educational C Compiler (TBA)
+- [KECC: KAIST Educational C Compiler](https://github.com/kaist-cp/kecc-public)
 
 - We will use [Rust](https://www.rust-lang.org/) as the language of implementation, because its
   ownership type system greatly simplifies the development of large-scale system software. If you
   want to "opt out", you can also use FFI and implement your compiler in C/C++.
+  
+  We recommend you to read [this helpdesk page](https://github.com/kaist-cp/helpdesk/#specialty) that describes how to study Rust.
 
 
 ## Prerequisites
