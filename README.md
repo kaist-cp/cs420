@@ -10,6 +10,21 @@
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
 
 
+### Online sessions
+
+**IMPORTANT**: due to COVID-19, we're going to conduct online sessions at least from 16th to 27th of
+March.
+
+- For each session, an one-hour video will be provided via YouTube (or other video sharing
+  platforms).
+
+- You're required to watch the video, and based on the contents, to solve a pop quiz that will be
+  posted at gg.kaist.ac.kr.
+
+- I'll assign compiler construction homework (due at the end of the semester). You're encouraged to
+  ask questions on the homework in the [issue tracker](https://github.com/kaist-cp/cs420/issues) at
+  the early stage of the semester.
+
 
 ## Course description
 
