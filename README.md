@@ -12,13 +12,12 @@
 
 ### Online sessions
 
-**IMPORTANT**: due to COVID-19, we're going to conduct online sessions at least from 16th to 27th of
-March.
+Due to COVID-19, we're going to conduct online sessions at least from 16th to 27th of March.
 
-- For each session, an one-hour video will be provided via YouTube (or other video sharing
-  platforms).
+- Videos for the four sessions (17th, 19th, 24th, and 26th of March) will be provided via [this
+  YouTube channel](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0).
 
-- You're required to watch the video, and based on the contents, to solve a pop quiz that will be
+- You're required to watch the video, and based on the contents, to solve pop quizzes that will be
   posted at gg.kaist.ac.kr.
 
 - I'll assign compiler construction homework (due at the end of the semester). You're encouraged to
@@ -93,7 +92,8 @@ compiler correctness theory will greatly help you efficiently build your own com
   ownership type system greatly simplifies the development of large-scale system software. If you
   want to "opt out", you can also use FFI and implement your compiler in C/C++.
   
-  We recommend you to read [this helpdesk page](https://github.com/kaist-cp/helpdesk/#specialty) that describes how to study Rust.
+  We recommend you to read [this helpdesk page](https://github.com/kaist-cp/helpdesk/#specialty)
+  that describes how to study Rust.
 
 
 ## Prerequisites
@@ -149,10 +149,8 @@ Please sign [KAIST School of Computing Honor Code](https://gg.kaist.ac.kr/assign
   repository so that new announcements will automatically be delivered to you email address.
 
 - Ask your questions via email **only if** they are either confidential or personal.  Otherwise, ask
-  administrative questions in [this repository's issue
-  tracker](https://github.com/kaist-cp/cs420/issues) and technical questions in [the
-  helpdesk](https://github.com/kaist-cp/helpdesk).  Any questions failing to do so
-  (e.g. email questions on course materials) will not be answered.
+   questions in [this repository's issue tracker](https://github.com/kaist-cp/cs420/issues).  Any
+   questions failing to do so (e.g. email questions on course materials) will not be answered.
 
     + I'm requiring you to ask questions online first for two reasons. First, clearly writing a
       question is the first step to reach an answer. Second, you can benefit from questions and
