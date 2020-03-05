@@ -74,25 +74,36 @@ to prove the correctness of KECC's transformations and optimizations? As it will
 compiler correctness theory will greatly help you efficiently build your own compiler.
 
 
-### Textbook
+### Resources
 
-- [Slides](https://docs.google.com/presentation/d/1SqtU-Cn60Sd1jkbO0OSsRYKPMIkul0eZoYG9KpMugFE/edit?usp=sharing).  If you have any suggestions to improve the slide, please leave comments in the slide.
+- [Slides](https://docs.google.com/presentation/d/1SqtU-Cn60Sd1jkbO0OSsRYKPMIkul0eZoYG9KpMugFE/edit?usp=sharing).
+  If you have any suggestions to improve the slide, please leave comments in the slide.
+
+- [KECC: KAIST Educational C Compiler](https://github.com/kaist-cp/kecc-public)
+
 - [The LLVM Compiler Infrastructure](https://github.com/llvm/llvm-project)
 
 
 ### Tools
 
-- [KECC: KAIST Educational C Compiler](https://github.com/kaist-cp/kecc-public)
+Make sure you're capable of using the following development tools:
 
-- We will use [Rust](https://www.rust-lang.org/) as the language of implementation, because its
-  ownership type system greatly simplifies the development of large-scale system software. If you
-  want to "opt out", you can also use FFI and implement your compiler in C/C++.
+- [Git](https://git-scm.com/): for downloading KECC and version-controlling your development. If
+  you're not familiar with Git, walk through [this
+  tutorial](https://www.atlassian.com/git/tutorials).
+
+- [Rust](https://www.rust-lang.org/): as the language of homework implementation. We chose Rust
+  because its ownership type system greatly simplifies the development of large-scale system
+  software. If you want to "opt out", you can also use FFI and implement your compiler in C/C++.
 
   We recommend you to read [this page](https://github.com/kaist-cp/helpdesk/#specialty) that
   describes how to study Rust.
 
-- You'll be provided with a Linux server account. [Please submit your SSH key
-  here](https://gg.kaist.ac.kr/assignment/6/).
+- [Visual Studio Code](https://code.visualstudio.com/) (optional): for developing your homework. If
+  you prefer other editors, you're good to go.
+
+    + You'll be provided with a Linux server account. You can use it as a VSCode remote
+      server. [Please submit your SSH key here](https://gg.kaist.ac.kr/assignment/6/).
 
 
 ## Prerequisites
