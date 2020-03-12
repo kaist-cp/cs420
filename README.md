@@ -18,7 +18,7 @@ Due to COVID-19, we're going to conduct online sessions at least from 16th to 27
   YouTube channel](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0).
 
 - You're required to watch the video, and based on the contents, to solve pop quizzes that will be
-  posted at gg.kaist.ac.kr. The details will be announced in the issue tracker.
+  posted at gg.kaist.ac.kr. The details will be announced in the issue tracker, e.g., https://github.com/kaist-cp/cs420/issues/3
 
 
 ## Course description
