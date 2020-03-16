@@ -102,8 +102,25 @@ Make sure you're capable of using the following development tools:
 - [Visual Studio Code](https://code.visualstudio.com/) (optional): for developing your homework. If
   you prefer other editors, you're good to go.
 
-    + You'll be provided with a Linux server account. You can use it as a VSCode remote
-      server. [Please submit your SSH key here](https://gg.kaist.ac.kr/assignment/6/).
+_ If you want, you'll be provided with a Linux server account. [Please submit your SSH key
+  here](https://gg.kaist.ac.kr/assignment/6/). You can connect to server by `ssh
+  s<student-id>@cp-service.kaist.ac.kr -p10005`, e.g., `ssh s20071163@cp-service.kaist.ac.kr
+  -p10005`.
+  
+    + Your private key `id_ed25519` should be in `~/.ssh`.
+
+    + Add the following lines in your `~/.ssh/config`:
+    
+      ```
+      Host cs420
+        Hostname cp-service.kaist.ac.kr
+        Port 10005
+        User s<student-id>
+      ```
+      
+      Then you can connect to 
+
+    + Now you can [use it as a VSCode remote server as in the video](https://www.youtube.com/watch?v=TTVuUIhdn_g&list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0&index=3).
 
 
 ## Prerequisites
