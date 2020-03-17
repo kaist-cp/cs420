@@ -101,7 +101,11 @@ Make sure you're capable of using the following development tools:
 
 - [Visual Studio Code](https://code.visualstudio.com/) (optional): for developing your homework. If
   you prefer other editors, you're good to go.
-
+    - [NOTE: If permission denied error occurs when trying to install `CodeLLDB Extension` into the 
+      remote server](https://github.com/kaist-cp/cs420/issues/5), please follow the steps: 
+      (1) Download [this file](https://github.com/vadimcn/vscode-lldb/releases/download/v1.5.0/codelldb-x86_64-linux.vsix) at the remote server, 
+      (2) Follow [the instructions](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) to install it.
+      
 - If you want, you'll be provided with a Linux server account. [Please submit your SSH key
   here](https://gg.kaist.ac.kr/assignment/6/). You can connect to server by `ssh
   s<student-id>@cp-service.kaist.ac.kr -p10005`, e.g., `ssh s20071163@cp-service.kaist.ac.kr
