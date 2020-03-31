@@ -92,6 +92,50 @@ Make sure you're capable of using the following development tools:
   you're not familiar with Git, walk through [this
   tutorial](https://www.atlassian.com/git/tutorials).
 
+  NOTE: When you do your homework with KECC, you should be careful not to expose your work to others. 
+  Please follow steps below:
+  
+  - To duplicate `KECC` without forking it, you can run a clone command.
+  ```bash
+  $ git clone https://github.com/kaist-cp/kecc-public.git
+  $ cd kecc-public.git/
+  $ git remote -v
+  origin	https://github.com/kaist-cp/kecc-public.git (fetch)
+  origin	https://github.com/kaist-cp/kecc-public.git (push)
+  ```
+  - To get updates from the original, you can fetch and merge origin master to your working branch.
+  ```bash
+  $ git fetch origin
+  $ git merge origin/master
+  ```
+
+  or
+
+  - Please create new private repository to clone `KECC`. 
+    (you may update your github account to `PRO`. Please refer to the [link](https://education.github.com/students))
+  - Clone your private repository into your local working space.
+  ```bash
+  $ git clone https://github.com/<your-github-id>/<private-repo>.git # may need password
+  $ cd <private-repo>.git/
+  $ git remote -v
+  origin	https://github.com/<your-github-id>/<private-repo>.git (fetch)
+  origin	https://github.com/<your-github-id>/<private-repo>.git (push)
+  ```
+  - If you want to get updates from the original, you need to set upstream as original repository.
+  ```bash
+  $ git remote add upstream https://github.com/kaist-cp/kecc-public.git
+  $ git remote -v
+  origin	 https://github.com/<your-github-id>/<private-repo>.git (fetch)
+  origin	 https://github.com/<your-github-id>/<private-repo>.git (push)
+  upstream https://github.com/kaist-cp/kecc-public.git (fetch)
+  upstream https://github.com/kaist-cp/kecc-public.git (push)
+  ```
+  - To get updates from the original, you can fetch and merge upstream master to your working branch.
+  ```bash
+  $ git fetch upstream
+  $ git merge upstream/master
+  ```
+
 - [Rust](https://www.rust-lang.org/): as the language of homework implementation. We chose Rust
   because its ownership type system greatly simplifies the development of large-scale system
   software. If you want to "opt out", you can also use FFI and implement your compiler in C/C++.
