@@ -92,49 +92,49 @@ Make sure you're capable of using the following development tools:
   you're not familiar with Git, walk through [this
   tutorial](https://www.atlassian.com/git/tutorials).
 
-  NOTE: When you do your homework with KECC, you should be careful not to expose your work to others. 
-  Please follow steps below:
-  
-  - To duplicate `KECC` without forking it, you can run a clone command.
-  ```bash
-  $ git clone https://github.com/kaist-cp/kecc-public.git
-  $ cd kecc-public.git/
-  $ git remote -v
-  origin	https://github.com/kaist-cp/kecc-public.git (fetch)
-  origin	https://github.com/kaist-cp/kecc-public.git (push)
-  ```
-  - To get updates from the original, you can fetch and merge origin master to your working branch.
-  ```bash
-  $ git fetch origin
-  $ git merge origin/master
-  ```
+    + **IMPORTANT**: you should not expose your work to others. In particular, you should not fork
+      the [upstream](https://github.com/kaist-cp/kecc-public) and push there. Please the following
+      steps:
 
-  or
+        * Directly clone the upstream without forking it.
 
-  - Please create new private repository to clone `KECC`. 
-    (you may update your github account to `PRO`. Please refer to the [link](https://education.github.com/students))
-  - Clone your private repository into your local working space.
-  ```bash
-  $ git clone https://github.com/<your-github-id>/<private-repo>.git # may need password
-  $ cd <private-repo>.git/
-  $ git remote -v
-  origin	https://github.com/<your-github-id>/<private-repo>.git (fetch)
-  origin	https://github.com/<your-github-id>/<private-repo>.git (push)
-  ```
-  - If you want to get updates from the original, you need to set upstream as original repository.
-  ```bash
-  $ git remote add upstream https://github.com/kaist-cp/kecc-public.git
-  $ git remote -v
-  origin	 https://github.com/<your-github-id>/<private-repo>.git (fetch)
-  origin	 https://github.com/<your-github-id>/<private-repo>.git (push)
-  upstream https://github.com/kaist-cp/kecc-public.git (fetch)
-  upstream https://github.com/kaist-cp/kecc-public.git (push)
-  ```
-  - To get updates from the original, you can fetch and merge upstream master to your working branch.
-  ```bash
-  $ git fetch upstream
-  $ git merge upstream/master
-  ```
+          ```bash
+          $ git clone --origin upstream https://github.com/kaist-cp/kecc-public.git
+          $ cd kecc-public
+          $ git remote -v
+          upstream	https://github.com/kaist-cp/kecc-public.git (fetch)
+          upstream	https://github.com/kaist-cp/kecc-public.git (push)
+          ```
+
+        * To get updates from the upstream, fetch and merge `upstream/master`.
+
+          ```bash
+          $ git fetch upstream
+          $ git merge upstream/master
+          ```
+
+    + If you want to manage your development in a Git server, please create your own private
+      repository.
+
+        * You may upgrade your GitHub account to "PRO", which is free of charge.  Refer to the
+          [documentation](https://education.github.com/students)
+
+        * Set up your repository as a remote.
+
+          ```bash
+          $ git remote add origin git@github.com:<github-id>/kecc-public.git
+          $ git remote -v
+          origin	 git@github.com:<github-id>/kecc-public.git (fetch)
+          origin	 git@github.com:<github-id>/kecc-public.git (push)
+          upstream https://github.com/kaist-cp/kecc-public.git (fetch)
+          upstream https://github.com/kaist-cp/kecc-public.git (push)
+          ```
+
+        * Push to your repository.
+
+          ```bash
+          $ git push -u origin master
+          ```
 
 - [Rust](https://www.rust-lang.org/): as the language of homework implementation. We chose Rust
   because its ownership type system greatly simplifies the development of large-scale system
@@ -145,7 +145,7 @@ Make sure you're capable of using the following development tools:
 
 - [Visual Studio Code](https://code.visualstudio.com/) (optional): for developing your homework. If
   you prefer other editors, you're good to go.
-    - [NOTE: If permission denied error occurs when trying to install `CodeLLDB Extension` into the 
+    + [NOTE: If permission denied error occurs when trying to install `CodeLLDB Extension` into the 
       remote server](https://github.com/kaist-cp/cs420/issues/5), please follow the steps: 
       (1) Download [this file](https://github.com/vadimcn/vscode-lldb/releases/download/v1.5.0/codelldb-x86_64-linux.vsix) at the remote server, 
       (2) Follow [the instructions](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) to install it.
