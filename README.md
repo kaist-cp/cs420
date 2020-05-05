@@ -12,7 +12,7 @@
 
 ### Online sessions
 
-Due to COVID-19, we're going to conduct online sessions throughout the semester.
+Due to COVID-19, we're going to conduct online sessions.
 
 - Online sessions will be provided via [this YouTube channel](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0).
 
