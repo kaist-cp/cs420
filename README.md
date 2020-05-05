@@ -12,13 +12,14 @@
 
 ### Online sessions
 
-Due to COVID-19, we're going to conduct online sessions at least from 16th to 27th of March.
+Due to COVID-19, we're going to conduct online sessions throughout the semester.
 
-- Videos for the four sessions (17th, 19th, 24th, and 26th of March) will be provided via [this
-  YouTube channel](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0).
+- Online sessions will be provided via [this YouTube channel](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0).
 
 - You're required to watch the video, and based on the contents, to solve pop quizzes that will be
   posted at gg.kaist.ac.kr. The details will be announced in the issue tracker, e.g., https://github.com/kaist-cp/cs420/issues/3
+  
+- If it's difficult to understand English, please turn on the subtitles in the YouTube videos. Auto-transcribed subtitles will be shown.
 
 
 ## Course description
@@ -147,8 +148,11 @@ Make sure you're capable of using the following development tools:
   you prefer other editors, you're good to go.
     + [NOTE: If permission denied error occurs when trying to install `CodeLLDB Extension` into the 
       remote server](https://github.com/kaist-cp/cs420/issues/5), please follow the steps: 
-      (1) Download [this file](https://github.com/vadimcn/vscode-lldb/releases/download/v1.5.0/codelldb-x86_64-linux.vsix) at the remote server, 
-      (2) Follow [the instructions](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) to install it.
+      1. Download [this file](https://github.com/vadimcn/vscode-lldb/releases/download/v1.5.0/codelldb-x86_64-linux.vsix) at the remote server.
+      1. Follow [the instructions](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) to install it.
+    + [NOTE: If you cannot connect to the remote server via VSCode with `fail to create hard link` error message](https://github.com/kaist-cp/cs420/issues/91), please follow the steps:
+      1. Close VSCode window and try to connect to the remote server via terminal(or cmd). If you encounter `Connection timed out` error message, try again after a few minutes.
+      1. Delete all the files in `~/.vscode-server/bin/`.
       
 - If you want, you'll be provided with a Linux server account. [Please submit your SSH key
   here](https://gg.kaist.ac.kr/assignment/6/). You can connect to server by `ssh
