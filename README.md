@@ -163,7 +163,7 @@ Make sure you're capable of using the following development tools:
        - See [this link](https://gist.github.com/cmpark0126/459514e8e73cac0c76284b8ec47334a7) for a description of the compilation flags.
     1. Copy LLVM IR code.
     1. Change the target language from C to LLVM IR and compiler from `clang` to `opt`.
-    1. Paste LLVM IR code, and optimize it with `-mem2reg`(or `-gvn`) flag.
+    1. Paste LLVM IR code, and optimize it using `-mem2reg`(or `-gvn`) flag.
 
 - If you want, you'll be provided with a Linux server account. [Please submit your SSH key
   here](https://gg.kaist.ac.kr/assignment/6/). You can connect to server by `ssh
