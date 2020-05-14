@@ -157,7 +157,7 @@ Make sure you're capable of using the following development tools:
 - [Compiler Explorer](https://godbolt.org/) (optional): for comparing the result of KECC to LLVM IR or RISC-V assembly code.
   See [this video](https://www.youtube.com/watch?v=YuG0poPl8N4) for instructions.
   
-  + NOTE: If you want to see LLVM IR code after using a specific optimization pass(e.g., mem2reg, gvn, etc.), 
+  + NOTE: If you want to see LLVM IR code after using a specific optimization pass (e.g., mem2reg, gvn, etc.), 
     please follow the steps:
     1. Type your C code, and obtain LLVM IR code by compiling it using `-O0 -Xclang -disable-O0-optnone -emit-llvm` flags.
        - See [this link](https://gist.github.com/cmpark0126/459514e8e73cac0c76284b8ec47334a7) for the description of each compilation flag.
