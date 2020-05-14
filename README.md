@@ -154,6 +154,17 @@ Make sure you're capable of using the following development tools:
       1. Close VSCode window and try to connect to the remote server via terminal(or cmd). If you encounter `Connection timed out` error message, try again after a few minutes.
       1. Delete all the files in `~/.vscode-server/bin/`.
       
+- [Compiler Explorer](https://godbolt.org/) (optional): for comparing the result of KECC to LLVM IR or RISC-V assembly code.
+  See [this video](https://www.youtube.com/watch?v=YuG0poPl8N4) for instructions.
+  
+  + NOTE: If you want to see LLVM IR code after using a specific optimization pass(e.g., mem2reg, gvn, etc.), 
+    please follow the steps:
+    1. Type your C code, and obtain LLVM IR code by compiling it using `-O0 -Xclang -disable-O0-optnone -emit-llvm` flags.
+       - See [this link](https://gist.github.com/cmpark0126/459514e8e73cac0c76284b8ec47334a7) for a description of the compilation flags.
+    1. Copy LLVM IR code.
+    1. Change the target language from C to LLVM IR and compiler from `clang` to `opt`.
+    1. Paste LLVM IR code, and optimize it with `-mem2reg`(or `-gvn`) flag.
+
 - If you want, you'll be provided with a Linux server account. [Please submit your SSH key
   here](https://gg.kaist.ac.kr/assignment/6/). You can connect to server by `ssh
   s<student-id>@cp-service.kaist.ac.kr -p10005`, e.g., `ssh s20071163@cp-service.kaist.ac.kr
