@@ -159,6 +159,7 @@ Make sure you're capable of using the following development tools:
   
   + NOTE: If you want to see LLVM IR code after using a specific optimization pass (e.g., mem2reg, gvn, etc.), 
     please follow the steps:
+    1. Uncheck `directives` and `comments` options in the filter menu at the top of the compiler window.
     1. Type your C code, and obtain LLVM IR code by compiling it using `-O0 -Xclang -disable-O0-optnone -emit-llvm` flags.
        - See [this link](https://gist.github.com/cmpark0126/459514e8e73cac0c76284b8ec47334a7) for the description of each compilation flag.
     1. Copy LLVM IR code.
