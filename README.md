@@ -80,7 +80,7 @@ compiler correctness theory will greatly help you efficiently build your own com
 - [Slides](https://docs.google.com/presentation/d/1SqtU-Cn60Sd1jkbO0OSsRYKPMIkul0eZoYG9KpMugFE/edit?usp=sharing).
   If you have any suggestions to improve the slide, please leave comments in the slide.
 
-- [KECC: KAIST Educational C Compiler](https://github.com/kaist-cp/kecc-public)
+- [KECC: KAIST Educational C Compiler](https://cp-git.kaist.ac.kr/cs420/kecc-public)
 
 - [The LLVM Compiler Infrastructure](https://github.com/llvm/llvm-project)
 
@@ -94,17 +94,17 @@ Make sure you're capable of using the following development tools:
   tutorial](https://www.atlassian.com/git/tutorials).
 
     + **IMPORTANT**: you should not expose your work to others. In particular, you should not fork
-      the [upstream](https://github.com/kaist-cp/kecc-public) and push there. Please the following
+      the [upstream](https://cp-git.kaist.ac.kr/cs420/kecc-public) and push there. Please the following
       steps:
 
         * Directly clone the upstream without forking it.
 
           ```bash
-          $ git clone --origin upstream https://github.com/kaist-cp/kecc-public.git
+          $ git clone --origin upstream https://cp-git.kaist.ac.kr/cs420/kecc-public.git
           $ cd kecc-public
           $ git remote -v
-          upstream	https://github.com/kaist-cp/kecc-public.git (fetch)
-          upstream	https://github.com/kaist-cp/kecc-public.git (push)
+          upstream	https://cp-git.kaist.ac.kr/cs420/kecc-public.git (fetch)
+          upstream	https://cp-git.kaist.ac.kr/cs420/kecc-public.git (push)
           ```
 
         * To get updates from the upstream, fetch and merge `upstream/master`.
@@ -123,12 +123,12 @@ Make sure you're capable of using the following development tools:
         * Set up your repository as a remote.
 
           ```bash
-          $ git remote add origin git@github.com:<github-id>/kecc-public.git
+          $ git remote add origin ssh://git@cp-git.kaist.ac.kr:9001/<gitlab-id>/kecc-public.git
           $ git remote -v
-          origin	 git@github.com:<github-id>/kecc-public.git (fetch)
-          origin	 git@github.com:<github-id>/kecc-public.git (push)
-          upstream https://github.com/kaist-cp/kecc-public.git (fetch)
-          upstream https://github.com/kaist-cp/kecc-public.git (push)
+          origin	 ssh://git@cp-git.kaist.ac.kr:9001/<gitlab-id>/kecc-public.git (fetch)
+          origin	 ssh://git@cp-git.kaist.ac.kr:9001/<gitlab-id>/kecc-public.git (push)
+          upstream https://cp-git.kaist.ac.kr/cs420/kecc-public.git (fetch)
+          upstream https://cp-git.kaist.ac.kr/cs420/kecc-public.git (push)
           ```
 
         * Push to your repository.
