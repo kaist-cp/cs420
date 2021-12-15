@@ -3,7 +3,7 @@
 ## Logistics
 
 - Instructor: [Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang)
-- Teaching assistant: TBA, [Chunmyong Park](https://cp.kaist.ac.kr/chunmyong.park)
+- Teaching assistant: [Minseong Jang](https://cp.kaist.ac.kr/minseong.jang), [Chunmyong Park](https://cp.kaist.ac.kr/chunmyong.park)
 - Time & Place: Mon & Wed 13:00am-14:15am, Rm. 117, Bldg. N1
 - Websites: https://github.com/kaist-cp/cs420, https://gg.kaist.ac.kr/course/10/
 - Announcements: in [issue
