@@ -1,25 +1,14 @@
-# KAIST CS420: Compiler Design (2020 Spring)
+# KAIST CS420: Compiler Design (2022 Spring)
 
 ## Logistics
 
 - Instructor: [Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang)
-- Teaching assistant: [Chunmyong Park](https://cp.kaist.ac.kr/chunmyong.park)
-- Time & Place: Tue & Thu 10:30am-11:45am, Rm. 1220, Bldg. E3-1
-- Websites: https://github.com/kaist-cp/cs420, https://gg.kaist.ac.kr/course/3/
+- Teaching assistant: TBA, [Chunmyong Park](https://cp.kaist.ac.kr/chunmyong.park)
+- Time & Place: Mon & Wed 13:00am-14:15am, Rm. 117, Bldg. N1
+- Websites: https://github.com/kaist-cp/cs420, https://gg.kaist.ac.kr/course/10/
 - Announcements: in [issue
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
 
-
-### Online sessions
-
-Due to COVID-19, we're going to conduct online sessions.
-
-- Online sessions will be provided via [this YouTube channel](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0).
-
-- You're required to watch the video, and based on the contents, to solve pop quizzes that will be
-  posted at gg.kaist.ac.kr. The details will be announced in the issue tracker, e.g., https://github.com/kaist-cp/cs420/issues/3
-  
-- If it's difficult to understand English, please turn on the subtitles in the YouTube videos. Auto-transcribed subtitles will be shown.
 
 
 ## Course description
@@ -60,7 +49,7 @@ optimizations on the IR; and (3) how to transform an IR program to a
 amount of skeleton code so that you can focus on the topic of this course.
 
 **We will also briefly discuss the recent trends of compiler construction.** I see two crucial
-recent trends: script languages and parallelism. (1) Scripting languages like JavaScript and Python,
+recent trends: scripting languages and parallelism. (1) Scripting languages like JavaScript and Python,
 unlike C, should be compiled (or interpreted) at run-time, and therefore, there is no clear
 distinction of compile- and run-time. It is a challenge in that compile time should also be
 optimized, but it is also an opportunity in that compile may gather and benefit from run-time
@@ -79,6 +68,10 @@ compiler correctness theory will greatly help you efficiently build your own com
 
 - [Slides](https://docs.google.com/presentation/d/1SqtU-Cn60Sd1jkbO0OSsRYKPMIkul0eZoYG9KpMugFE/edit?usp=sharing).
   If you have any suggestions to improve the slide, please leave comments in the slide.
+
+- [Videos for 2020 Spring](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0).
+
+  + You can turn on the subtitles in the YouTube videos. Auto-transcribed subtitles will be shown.
 
 - [KECC: KAIST Educational C Compiler](https://cp-git.kaist.ac.kr/cs420/kecc-public)
 
@@ -144,12 +137,42 @@ Make sure you're capable of using the following development tools:
   We recommend you to read [this page](https://github.com/kaist-cp/helpdesk/#specialty) that
   describes how to study Rust.
 
-- [Visual Studio Code](https://code.visualstudio.com/) (optional): for developing your homework. If
-  you prefer other editors, you're good to go.
+- [Rust](https://www.rust-lang.org/): as the language of homework implementation. We chose Rust
+  because its ownership type system greatly simplifies the development of large-scale system
+  software.
+
+  We recommend you to read [this page](https://cp.kaist.ac.kr/helpdesk#technical-expertise) that describes how to study Rust.
+
+- [Visual Studio Code](https://code.visualstudio.com/) (optional): for developing your homework. If you prefer other editors, you're good to go.
+
+- You can connect to server by `ssh s<student-id>@cp-service.kaist.ac.kr -p13002`, e.g., `ssh s20071163@cp-service.kaist.ac.kr -p13002`.
+
+    + **IMPORTANT: Don't try to hack. Don't try to freeze the server. Please be nice.**
+
+    + Your initial password is `123454321`. IMPORTANT: you should change it ASAP.
+
+    + I require you to register public SSH keys to the server. (In March, we'll expire your password so that you can log in only via SSH keys.)
+      See [this tutorial](https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication/) for more information on SSH public key authentication.
+      Use `ed25519`.
+
+    + In your client, you may want to set your `~/.ssh/config` as follows for easier SSH access:
+
+      ```
+      Host cs431
+        Hostname cp-service.kaist.ac.kr
+        Port 13002
+        User s20071163
+      ```
+
+      Then you can connect to the server by `ssh cs431`.
+
+    + Now you can [use it as a VSCode remote server as in the video](https://www.youtube.com/watch?v=TTVuUIhdn_g&list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0&index=3).
+
     + [NOTE: If permission denied error occurs when trying to install `CodeLLDB Extension` into the 
       remote server](https://github.com/kaist-cp/cs420/issues/5), please follow the steps: 
       1. Download [this file](https://github.com/vadimcn/vscode-lldb/releases/download/v1.5.0/codelldb-x86_64-linux.vsix) at the remote server.
       1. Follow [the instructions](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) to install it.
+
     + [NOTE: If you cannot connect to the remote server via VSCode with `fail to create hard link` error message](https://github.com/kaist-cp/cs420/issues/91), please follow the steps:
       1. Close VSCode window and try to connect to the remote server via terminal(or cmd). If you encounter `Connection timed out` error message, try again after a few minutes.
       1. Delete all the files in `~/.vscode-server/bin/`.
@@ -166,35 +189,14 @@ Make sure you're capable of using the following development tools:
     1. Change the target language from C to LLVM IR and compiler from `clang` to `opt`.
     1. Paste LLVM IR code, and optimize it using `-mem2reg`(or `-gvn`) flag.
 
-- If you want, you'll be provided with a Linux server account. [Please submit your SSH key
-  here](https://gg.kaist.ac.kr/assignment/6/). You can connect to server by `ssh
-  s<student-id>@cp-service.kaist.ac.kr -p10005`, e.g., `ssh s20071163@cp-service.kaist.ac.kr
-  -p10005`.
-
-    + Your private key `id_ed25519` should be in `~/.ssh`.
-
-    + Add the following lines in your `~/.ssh/config`:
-    
-      ```
-      Host cs420
-        Hostname cp-service.kaist.ac.kr
-        Port 10005
-        User s<student-id>
-      ```
-      
-      Then you can connect to the server by `ssh cs420`.
-
-    + Now you can [use it as a VSCode remote server as in the video](https://www.youtube.com/watch?v=TTVuUIhdn_g&list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0&index=3).
-
 
 ## Prerequisites
 
 - It is **strongly recommended** that students already took courses on:
 
-    + Mathematics (calculus MAS101 & MAS102 or discrete mathematics CS204): proposition
-      statement and proof
+    + Mathematics (calculus MAS101, MAS102, or discrete mathematics CS204): proposition statement and proof
     + Data structures (CS206): linked list, stack, queue
-    + Systems programming (CS230): memory layout
+    + Systems programming (CS230): memory layout and stack frame
     + Programming languages (CS320): lambda calculus, interpreter
 
   Without a proper understanding of these topics, you will likely struggle in this course.
@@ -218,22 +220,31 @@ Since compiler construction requires nontrivial undertaking, you're encouraged t
 the homework in the [issue tracker](https://github.com/kaist-cp/cs420/issues) at the early stage of
 the semester.
 
-### Final exam (20%, 16th of June, 10:30-11:45)
+### Final exam (20%, 13th of June, 10:30-11:45)
 
 The exam will evaluate your understanding of compiler theory.  There will not be a midterm exam.
 
 ### Attendance (?%)
 
-You should submit a token to the [Course Management](https://gg.kaist.ac.kr/course/3/) website for
-each session.  You should submit a token within **12 hours from the beginning of a session**.
-
-### Honor code
-
-[Please sign KAIST School of Computing Honor Code here](https://gg.kaist.ac.kr/quiz/1/).
-
+You should submit a token to the [Course Management](https://gg.kaist.ac.kr/course/10/) website for
+each session.  **You should answer to the quiz by the end of the day.**
 
 
 ## Communication
+
+### Registration
+
+- Make sure you can log in the [lab submission website](https://gg.kaist.ac.kr).
+
+    + Reset your password here: https://gg.kaist.ac.kr/accounts/password_reset/
+      The email address is your `@kaist.ac.kr` address.
+
+    + The id is your student id (e.g., 20071163).
+
+    + Log in with your student id and the new password.
+      If you cannot, please contact the head TA in the chat.
+
+### Rules
 
 - Course-related announcements and information will be posted on the
   [website](https://github.com/kaist-cp/cs420) as well as on the [GitHub issue
@@ -241,15 +252,36 @@ each session.  You should submit a token within **12 hours from the beginning of
   announcements within 24 hours of their being posted.  It is highly recommended to watch the
   repository so that new announcements will automatically be delivered to you email address.
 
-- Ask your questions via email **only if** they are either confidential or personal.  Otherwise, ask
-   questions in [this repository's issue tracker](https://github.com/kaist-cp/cs420/issues).  Any
-   questions failing to do so (e.g. email questions on course materials) will not be answered.
+- Ask questions on course materials and assignments in [this repository's issue tracker](https://github.com/kaist-cp/cs420/issues).
+    + Don't send emails to the instructor or TAs for course materials and assignments.
+    + Before asking a question, search it in Google and Stack Overflow.
+    + Describe your question as detailed as possible. It should include following things:
+      * Environment (OS, gcc, g++ version, and any other related program information).
+      * Command(s) that you used and the result. Any logs should be formatted in code. Refer to [this](https://guides.github.com/features/mastering-markdown/).
+      * Any directory or file changes you've made. If it is solution file, just describe which part of the code is modified.
+      * Googling result. Search before asking, and share the keyword used for searching and what you've learned from it.
+    + Give a proper title to your issue.
+    + Read [this](https://cp-git.kaist.ac.kr/cs420/cs420#communication) for more instructions.
 
     + I'm requiring you to ask questions online first for two reasons. First, clearly writing a
       question is the first step to reach an answer. Second, you can benefit from questions and
       answers of other students.
 
-- Emails to the instructor or TAs should begin with "CS420:" in the subject line, followed by a
-  brief description of the purpose of your email.  The content should at least contain your name and
-  student number.  Any emails failing to do so (e.g. emails without student number) will not be
+- Ask your questions via email **only if** they are either confidential or personal. Any questions
+   failing to do so (e.g. email questions on course materials) will not be answered.
+
+- We are NOT going to discuss *new* questions during the office hour. Before coming to the office
+  hour, please check if there is a similar question on the issue tracker. If there isn't, file a new
+  issue and start discussion there. The agenda of the office hour will be the issues that are not
+  resolved yet.
+
+- Emails to the instructor or the head TA should begin with "CS420:" in the subject line, followed
+  by a brief description of the purpose of your email. The content should at least contain your name
+  and student number. Any emails failing to do so (e.g. emails without student number) will not be
   answered.
+
+- If we should go online, we'll meet at the [Zoom room](https://kaist.zoom.us/my/jeehoon.kang).
+  your Zoom name should be `<your student number> <your name>` (e.g., `20071163 강지훈`).
+  Change your name by referring to [this](https://support.zoom.us/hc/en-us/articles/201363203-Customizing-your-profile).
+
+- This course is conducted in English. But you may ask questions in Korean. Then I will translate it to English.
