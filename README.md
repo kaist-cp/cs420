@@ -132,13 +132,6 @@ Make sure you're capable of using the following development tools:
 
 - [Rust](https://www.rust-lang.org/): as the language of homework implementation. We chose Rust
   because its ownership type system greatly simplifies the development of large-scale system
-  software. If you want to "opt out", you can also use FFI and implement your compiler in C/C++.
-
-  We recommend you to read [this page](https://github.com/kaist-cp/helpdesk/#specialty) that
-  describes how to study Rust.
-
-- [Rust](https://www.rust-lang.org/): as the language of homework implementation. We chose Rust
-  because its ownership type system greatly simplifies the development of large-scale system
   software.
 
   We recommend you to read [this page](https://cp.kaist.ac.kr/helpdesk#technical-expertise) that describes how to study Rust.
