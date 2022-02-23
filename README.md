@@ -3,7 +3,7 @@
 ## Logistics
 
 - Instructor: [Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang)
-- Teaching assistant: [Minseong Jang](https://cp.kaist.ac.kr/minseong.jang), [Chunmyong Park](https://cp.kaist.ac.kr/chunmyong.park)
+- Teaching assistant: [Kyeongmin Cho](https://cp.kaist.ac.kr/kyeongmin.cho) (head), [Minseong Jang](https://cp.kaist.ac.kr/minseong.jang) (main), [Chunmyong Park](https://cp.kaist.ac.kr/chunmyong.park)
 - Time & Place: Mon & Wed 13:00am-14:15am, Rm. 117, Bldg. N1
 - Websites: https://github.com/kaist-cp/cs420, https://gg.kaist.ac.kr/course/10/
 - Announcements: in [issue
@@ -93,41 +93,40 @@ Make sure you're capable of using the following development tools:
         * Directly clone the upstream without forking it.
 
           ```bash
-          $ git clone --origin upstream https://cp-git.kaist.ac.kr/cs420/kecc-public.git
+          $ git clone --origin upstream git@github.com:kaist-cp/kecc-public.git
           $ cd kecc-public
           $ git remote -v
-          upstream	https://cp-git.kaist.ac.kr/cs420/kecc-public.git (fetch)
-          upstream	https://cp-git.kaist.ac.kr/cs420/kecc-public.git (push)
+          upstream	git@github.com:kaist-cp/kecc-public.git (fetch)
+          upstream	git@github.com:kaist-cp/kecc-public.git (push)
           ```
 
-        * To get updates from the upstream, fetch and merge `upstream/master`.
+        * To get updates from the upstream, fetch and merge `upstream/main`.
 
           ```bash
           $ git fetch upstream
-          $ git merge upstream/master
+          $ git merge upstream/main
           ```
 
     + If you want to manage your development in a Git server, please create your own private
       repository.
 
-        * You may upgrade your GitHub account to "PRO", which is free of charge.  Refer to the
-          [documentation](https://education.github.com/students)
+        * You may upgrade your GitHub account to "PRO", which is free of charge.  
+          Refer to the [documentation](https://education.github.com/students)
 
         * Set up your repository as a remote.
 
           ```bash
-          $ git remote add origin ssh://git@cp-git.kaist.ac.kr:9001/<gitlab-id>/kecc-public.git
+          $ git remote add origin git@github.com:<github-id>/kecc-public.git
           $ git remote -v
-          origin	 ssh://git@cp-git.kaist.ac.kr:9001/<gitlab-id>/kecc-public.git (fetch)
-          origin	 ssh://git@cp-git.kaist.ac.kr:9001/<gitlab-id>/kecc-public.git (push)
-          upstream https://cp-git.kaist.ac.kr/cs420/kecc-public.git (fetch)
-          upstream https://cp-git.kaist.ac.kr/cs420/kecc-public.git (push)
+          origin	 git@github.com:<github-id>/kecc-public.git (fetch)
+          origin	 git@github.com:<github-id>/kecc-public.git (push)
+          upstream git@github.com:kaist-cp/kecc-public.git (fetch)
+          upstream git@github.com:kaist-cp/kecc-public.git (push)
           ```
-
         * Push to your repository.
 
           ```bash
-          $ git push -u origin master
+          $ git push -u origin main
           ```
 
 - [Rust](https://www.rust-lang.org/): as the language of homework implementation. We chose Rust
@@ -160,6 +159,8 @@ Make sure you're capable of using the following development tools:
       Then you can connect to the server by `ssh cs431`.
 
     + Now you can [use it as a VSCode remote server as in the video](https://www.youtube.com/watch?v=TTVuUIhdn_g&list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0&index=3).
+
+    + [NOTE: We recommend the `rust-analyzer` plugin instead of `rls`](https://github.com/rust-analyzer/rust-analyzer).
 
     + [NOTE: If permission denied error occurs when trying to install `CodeLLDB Extension` into the 
       remote server](https://github.com/kaist-cp/cs420/issues/5), please follow the steps: 
