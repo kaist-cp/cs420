@@ -4,7 +4,7 @@
 
 - Instructor: [Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang)
 - Teaching assistant: [Kyeongmin Cho](https://cp.kaist.ac.kr/kyeongmin.cho) (head), [Minseong Jang](https://cp.kaist.ac.kr/minseong.jang) (main), [Chunmyong Park](https://cp.kaist.ac.kr/chunmyong.park)
-- Time & Place: Mon & Wed 13:00am-14:15am, Rm. 117, Bldg. N1
+- Time & Place: Mon & Wed 1:00pm-2:15pm, Rm. 117, Bldg. N1
 - Websites: https://github.com/kaist-cp/cs420, https://gg.kaist.ac.kr/course/10/
 - Announcements: in [issue
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
@@ -73,7 +73,7 @@ compiler correctness theory will greatly help you efficiently build your own com
 
   + You can turn on the subtitles in the YouTube videos. Auto-transcribed subtitles will be shown.
 
-- [KECC: KAIST Educational C Compiler](https://cp-git.kaist.ac.kr/cs420/kecc-public)
+- [KECC: KAIST Educational C Compiler](https://github.com/kaist-cp/kecc-public)
 
 - [The LLVM Compiler Infrastructure](https://github.com/llvm/llvm-project)
 
@@ -87,7 +87,7 @@ Make sure you're capable of using the following development tools:
   tutorial](https://www.atlassian.com/git/tutorials).
 
     + **IMPORTANT**: you should not expose your work to others. In particular, you should not fork
-      the [upstream](https://cp-git.kaist.ac.kr/cs420/kecc-public) and push there. Please the following
+      the [upstream](https://github.com/kaist-cp/kecc-public) and push there. Please the following
       steps:
 
         * Directly clone the upstream without forking it.
@@ -150,13 +150,13 @@ Make sure you're capable of using the following development tools:
     + In your client, you may want to set your `~/.ssh/config` as follows for easier SSH access:
 
       ```
-      Host cs431
+      Host cs420
         Hostname cp-service.kaist.ac.kr
         Port 13002
         User s20071163
       ```
 
-      Then you can connect to the server by `ssh cs431`.
+      Then you can connect to the server by `ssh cs420`.
 
     + Now you can [use it as a VSCode remote server as in the video](https://www.youtube.com/watch?v=TTVuUIhdn_g&list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0&index=3).
 
@@ -255,7 +255,7 @@ each session.  **You should answer to the quiz by the end of the day.**
       * Any directory or file changes you've made. If it is solution file, just describe which part of the code is modified.
       * Googling result. Search before asking, and share the keyword used for searching and what you've learned from it.
     + Give a proper title to your issue.
-    + Read [this](https://cp-git.kaist.ac.kr/cs420/cs420#communication) for more instructions.
+    + Read [this](https://github.com/kaist-cp/cs420#communication) for more instructions.
 
     + I'm requiring you to ask questions online first for two reasons. First, clearly writing a
       question is the first step to reach an answer. Second, you can benefit from questions and
