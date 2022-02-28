@@ -214,7 +214,7 @@ Since compiler construction requires nontrivial undertaking, you're encouraged t
 the homework in the [issue tracker](https://github.com/kaist-cp/cs420/issues) at the early stage of
 the semester.
 
-### Final exam (20%, 13th of June, 10:30-11:45)
+### Final exam (20%, 13th of June, 13:00-15:45)
 
 The exam will evaluate your understanding of compiler theory.  There will not be a midterm exam.
 
