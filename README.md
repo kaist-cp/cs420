@@ -8,7 +8,7 @@
 - Websites: https://github.com/kaist-cp/cs420, https://gg.kaist.ac.kr/course/10/
 - Announcements: in [issue
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
-- Office Hour: Fri 9:00am-12:00pm, [Zoom room](https://zoom.us/j/6537354068) (The passcode is same as the class, announced at KLMS). It is not required, but if you want to come, do so by 9:15am. See [below](https://github.com/kaist-cp/cs420#rules) for office hour policy.
+- Office Hour: Fri 9:00am-12:00pm, [Google Meet](https://meet.google.com/szf-hbqc-hdb). It is not required, but if you want to come, do so by 9:15am. See [below](https://github.com/kaist-cp/cs420#rules) for office hour policy.
 
 
 
