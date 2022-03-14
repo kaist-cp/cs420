@@ -5,6 +5,7 @@
 - Instructor: [Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang)
 - Teaching assistant: [Kyeongmin Cho](https://cp.kaist.ac.kr/kyeongmin.cho) (head), [Minseong Jang](https://cp.kaist.ac.kr/minseong.jang) (main), [Chunmyong Park](https://cp.kaist.ac.kr/chunmyong.park)
 - Time & Place: Mon & Wed 1:00pm-2:15pm, Rm. 117, Bldg. N1
+    + You can also join the session remotely from Zoom: https://kaist.zoom.us/my/jeehoon.kang
 - Websites: https://github.com/kaist-cp/cs420, https://gg.kaist.ac.kr/course/10/
 - Announcements: in [issue
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
@@ -275,7 +276,7 @@ each session.  **You should answer to the quiz by the end of the day.**
   and student number. Any emails failing to do so (e.g. emails without student number) will not be
   answered.
 
-- If we should go online, we'll meet at the [Zoom room](https://kaist.zoom.us/my/jeehoon.kang).
+- If you join the session remotely from Zoom (https://kaist.zoom.us/my/jeehoon.kang), 
   your Zoom name should be `<your student number> <your name>` (e.g., `20071163 강지훈`).
   Change your name by referring to [this](https://support.zoom.us/hc/en-us/articles/201363203-Customizing-your-profile).
 
