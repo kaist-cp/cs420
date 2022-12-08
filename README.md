@@ -1,15 +1,21 @@
-# KAIST CS420: Compiler Design (2022 Spring)
+# KAIST CS420: Compiler Design
 
 ## Logistics
 
 - Instructor: [Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang)
-- Teaching assistant: [Kyeongmin Cho](https://cp.kaist.ac.kr/kyeongmin.cho) (head), [Minseong Jang](https://cp.kaist.ac.kr/minseong.jang) (main), [Chunmyong Park](https://cp.kaist.ac.kr/chunmyong.park)
-- Time & Place: Mon & Wed 1:00pm-2:15pm, Rm. 117, Bldg. N1
-    + You can also join the session remotely from Zoom: https://kaist.zoom.us/my/jeehoon.kang
-- Websites: https://github.com/kaist-cp/cs420, https://gg.kaist.ac.kr/course/10/
+- Time: Tue & Thu 1:00pm-2:15pm
+- Place
+  + Rm. 1101, Bldg. E3-1. **YOUR PHYSICAL ATTENDANCE IS REQUIRED** unless announced otherwise.
+  + [Zoom room](https://kaist.zoom.us/my/jeehoon.kang) (if remote participation is absolutely necessary). The passcode is announced at KLMS.
+  + [Youtube channel](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0). Turn on English subtitle at YouTube, if necessary.
+- Websites: <https://github.com/kaist-cp/cs420>, <https://gg.kaist.ac.kr/course/15/>
 - Announcements: in [issue
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
-- Office Hour: Fri 9:00am-12:00pm, [Google Meet](https://meet.google.com/szf-hbqc-hdb). It is not required, but if you want to come, do so by 9:15am. See [below](https://github.com/kaist-cp/cs420#rules) for office hour policy.
+  + We assume you read each announcement within 24 hours.
+  + We strongly recommend you to watch the repository.
+- TA: TBA
+  + Office Hour: Fri 9:00am-10:00am, Zoom room (TBA, the passcode is same as the class). It is not required, but if you want to come, do so by 9:15am. See [below](https://github.com/kaist-cp/cs420#rules) for office hour policy.
+    <!-- Fri 9:00am-12:00pm, [Zoom room](https://zoom.us/j/4842624821)(The passcode is same as the class). It is not required, but if you want to come, do so by 9:30am. See [below](#communication) for office hour policy. -->
 
 
 
@@ -66,18 +72,31 @@ to prove the correctness of KECC's transformations and optimizations? As it will
 compiler correctness theory will greatly help you efficiently build your own compiler.
 
 
-### Resources
+### Textbook
 
 - [Slides](https://docs.google.com/presentation/d/1SqtU-Cn60Sd1jkbO0OSsRYKPMIkul0eZoYG9KpMugFE/edit?usp=sharing).
   If you have any suggestions to improve the slide, please leave comments in the slide.
 
-- [Videos for 2020 Spring](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0).
-
-  + You can turn on the subtitles in the YouTube videos. Auto-transcribed subtitles will be shown.
-
 - [KECC: KAIST Educational C Compiler](https://github.com/kaist-cp/kecc-public)
 
 - [The LLVM Compiler Infrastructure](https://github.com/llvm/llvm-project)
+
+
+### Prerequisites
+
+- It is **strongly recommended** that students already took courses on:
+
+    + Mathematics (MAS101): proposition statement and proof
+    + Data structures (CS206): linked list, stack, queue
+    + Systems programming (CS230) or Operating systems (CS330): memory layout, cache, lock
+    + Programming languages (CS320): lambda calculus, interpreter
+
+  Without a proper understanding of these topics, you will likely struggle in this course.
+
+- Other recommendations which would help you in this course:
+
+    + Basic understanding of computer architecture (CS311)
+    + Programming experience in [Rust](https://www.rust-lang.org/)
 
 
 ### Tools
@@ -113,7 +132,7 @@ Make sure you're capable of using the following development tools:
       repository.
 
         * You may upgrade your GitHub account to "PRO", which is free of charge.  
-          Refer to the [documentation](https://education.github.com/students)
+          Refer to the [documentation](https://education.github.com/students).
 
         * Set up your repository as a remote.
 
@@ -139,13 +158,13 @@ Make sure you're capable of using the following development tools:
 
 - [Visual Studio Code](https://code.visualstudio.com/) (optional): for developing your homework. If you prefer other editors, you're good to go.
 
-- You can connect to server by `ssh s<student-id>@cp-service.kaist.ac.kr -p13002`, e.g., `ssh s20071163@cp-service.kaist.ac.kr -p13002`.
+- You can connect to server by `ssh s<student-id>@cp-service.kaist.ac.kr -p13001`, e.g., `ssh s20071163@cp-service.kaist.ac.kr -p13001`.
 
     + **IMPORTANT: Don't try to hack. Don't try to freeze the server. Please be nice.**
 
-    + Your initial password is `123454321`. IMPORTANT: you should change it ASAP.
+    + Your initial password will be announced at <https://gg.kaist.ac.kr>.
 
-    + I require you to register public SSH keys to the server. (In March, we'll expire your password so that you can log in only via SSH keys.)
+    + I require you to register public SSH keys to the server. (In September, we'll expire your password so that you can log in only via SSH keys.)
       See [this tutorial](https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication/) for more information on SSH public key authentication.
       Use `ed25519`.
 
@@ -154,13 +173,15 @@ Make sure you're capable of using the following development tools:
       ```
       Host cs420
         Hostname cp-service.kaist.ac.kr
-        Port 13002
+        Port 13001
         User s20071163
       ```
 
       Then you can connect to the server by `ssh cs420`.
 
     + Now you can [use it as a VSCode remote server as in the video](https://www.youtube.com/watch?v=TTVuUIhdn_g&list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0&index=3).
+
+    + Install [rustup](https://rustup.rs) in the server to begin working on Rust!
 
     + [NOTE: We recommend the `rust-analyzer` plugin instead of `rls`](https://github.com/rust-analyzer/rust-analyzer).
 
@@ -172,38 +193,21 @@ Make sure you're capable of using the following development tools:
     + [NOTE: If you cannot connect to the remote server via VSCode with `fail to create hard link` error message](https://github.com/kaist-cp/cs420/issues/91), please follow the steps:
       1. Close VSCode window and try to connect to the remote server via terminal(or cmd). If you encounter `Connection timed out` error message, try again after a few minutes.
       1. Delete all the files in `~/.vscode-server/bin/`.
-      
-- [Compiler Explorer](https://godbolt.org/) (optional): for comparing the result of KECC to LLVM IR or RISC-V assembly code.
-  See [this video](https://www.youtube.com/watch?v=YuG0poPl8N4) for instructions.
-  
-  + NOTE: If you want to see LLVM IR code after using a specific optimization pass (e.g., mem2reg, gvn, etc.), 
-    please follow the steps:
-    1. Uncheck `Directives` and `Comments` options in the filter menu at the top of the compiler window.
-    1. Type your C code, and obtain LLVM IR code by compiling it using `-O0 -Xclang -disable-O0-optnone -emit-llvm` flags.
-       - See [this link](https://gist.github.com/cmpark0126/459514e8e73cac0c76284b8ec47334a7) for the description of each compilation flag.
-    1. Copy LLVM IR code.
-    1. Change the target language from C to LLVM IR and compiler from `clang` to `opt`.
-    1. Paste LLVM IR code, and optimize it using `-mem2reg`(or `-gvn`) flag.
-
-
-## Prerequisites
-
-- It is **strongly recommended** that students already took courses on:
-
-    + Mathematics (calculus MAS101, MAS102, or discrete mathematics CS204): proposition statement and proof
-    + Data structures (CS206): linked list, stack, queue
-    + Systems programming (CS230): memory layout and stack frame
-    + Programming languages (CS320): lambda calculus, interpreter
-
-  Without a proper understanding of these topics, you will likely struggle in this course.
-
-- Other recommendations which would help you in this course:
-
-    + Basic understanding of computer architecture (CS311)
-    + Programming experience in [Rust](https://www.rust-lang.org/)
 
 
 ## Grading & honor code
+
+### Cheating
+
+**IMPORTANT: PAY CLOSE ATTENTION. VERY SERIOUS.**
+
+- Please sign the KAIST CS Honor Code for this semester.
+  Otherwise, you may be expelled from the course.
+
+- We will use sophisticated tools for detecting code plagiarism​.
+
+    + [Google "code plagiarism detector" for images](https://www.google.com/search?q=code+plagiarism+detector&tbm=isch) and see how these tools can detect "sophisticated" plagiarisms.
+      You really cannot escape my catch. Just don't try plagiarism in any form.
 
 ### Homework (80%)
 
@@ -220,10 +224,13 @@ the semester.
 
 The exam will evaluate your understanding of compiler theory.  There will not be a midterm exam.
 
+Your physical apperance is required. If online participation is absolutely necessary, we'll use Zoom.
+
 ### Attendance (?%)
 
-You should submit a token to the [Course Management](https://gg.kaist.ac.kr/course/10/) website for
-each session.  **You should answer to the quiz by the end of the day.**
+- You should solve a quiz at the [Course Management](https://gg.kaist.ac.kr/course/15) website for each session. **You should answer to the quiz by the end of the day.**
+
+- If you miss a significant number of sessions, you'll automatically get an F.
 
 
 ## Communication
