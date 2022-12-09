@@ -13,7 +13,7 @@
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
   + We assume you read each announcement within 24 hours.
   + We strongly recommend you to watch the repository.
-- TA: TBA
+- TA: [Jungin Rhee](http://cp.kaist.ac.kr/jungin.rhee), [Haechan An](https://cp.kaist.ac.kr/haechan.an/)
   + Office Hour: Fri 9:00am-10:00am, Zoom room (TBA, the passcode is same as the class). It is not required, but if you want to come, do so by 9:15am. See [below](https://github.com/kaist-cp/cs420#rules) for office hour policy.
     <!-- Fri 9:00am-12:00pm, [Zoom room](https://zoom.us/j/4842624821)(The passcode is same as the class). It is not required, but if you want to come, do so by 9:30am. See [below](#communication) for office hour policy. -->
 
