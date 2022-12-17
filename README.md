@@ -88,7 +88,7 @@ compiler correctness theory will greatly help you efficiently build your own com
 
     + Mathematics (MAS101): proposition statement and proof
     + Data structures (CS206): linked list, stack, queue
-    + Systems programming (CS230) or Operating systems (CS330): memory layout, cache, lock
+    + Systems programming (CS230) or Computer Organization (CS311): memory layout, stack and heap, assembly language
     + Programming languages (CS320): lambda calculus, interpreter
 
   Without a proper understanding of these topics, you will likely struggle in this course.
@@ -96,7 +96,7 @@ compiler correctness theory will greatly help you efficiently build your own com
 - Other recommendations which would help you in this course:
 
     + Basic understanding of computer architecture (CS311)
-    + Programming experience in [Rust](https://www.rust-lang.org/)
+    + Programming experience in [Rust](https://www.rust-lang.org/) (see also [CS220](https://github.com/kaist-cp/cs220))
 
 
 ### Tools
