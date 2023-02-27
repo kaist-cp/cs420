@@ -209,7 +209,7 @@ Make sure you're capable of using the following development tools:
     + [Google "code plagiarism detector" for images](https://www.google.com/search?q=code+plagiarism+detector&tbm=isch) and see how these tools can detect "sophisticated" plagiarisms.
       You really cannot escape my catch. Just don't try plagiarism in any form.
 
-### Homework (80%)
+### Homework (40%)
 
 You will implement translations and optimizations on KECC. All homework submissions will be
 automatically graded online so that you can immediately see your score. If your compiler is correct
@@ -220,11 +220,14 @@ Since compiler construction requires nontrivial undertaking, you're encouraged t
 the homework in the [issue tracker](https://github.com/kaist-cp/cs420/issues) at the early stage of
 the semester.
 
-### Final exam (20%, 13th of June, 13:00-15:45)
+### Exams (60%)
 
-The exam will evaluate your understanding of compiler theory.  There will not be a midterm exam.
+- Midterm: 30%, 18th of April (Tue), 13:00-15:45
+- Final: 30%, 13th of June (Tue), 13:00-15:45
 
-Your physical apperance is required. If online participation is absolutely necessary, we'll use Zoom.
+The exams will evaluate your understanding of compiler theory.
+
+Your physical apperance is required. If online participation is **absolutely necessary**, we'll use Zoom.
 
 ### Attendance (?%)
 
