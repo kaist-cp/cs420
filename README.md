@@ -183,6 +183,26 @@ Make sure you're capable of using the following development tools:
 
     + Install [rustup](https://rustup.rs) in the server to begin working on Rust!
 
+      ```sh
+      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+      ```
+
+    + Install necessary dependencies for KECC
+
+      ```sh
+      sudo apt update
+      sudo apt install \
+        git man-db locales \
+        vim neovim emacs \
+        zsh bash-completion tmux \
+        build-essential gcc clang make cmake python3 csmith libcsmith-dev creduce \
+        gcc-riscv64-linux-gnu g++-riscv64-linux-gnu qemu-user-static \
+        graphviz curl \
+        zip python3-pip
+
+      pip install tqdm
+      ```
+
     + [NOTE: We recommend the `rust-analyzer` plugin instead of `rls`](https://github.com/rust-analyzer/rust-analyzer).
 
     + [NOTE: If permission denied error occurs when trying to install `CodeLLDB Extension` into the 
