@@ -78,6 +78,7 @@ compiler correctness theory will greatly help you efficiently build your own com
   If you have any suggestions to improve the slide, please leave comments in the slide.
 
 - [KECC: KAIST Educational C Compiler](https://github.com/kaist-cp/kecc-public)
+  + Documentation: <https://cp.kaist.ac.kr/kecc-public/kecc/>
 
 - [The LLVM Compiler Infrastructure](https://github.com/llvm/llvm-project)
 
