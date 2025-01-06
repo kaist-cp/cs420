@@ -3,20 +3,18 @@
 ## Logistics
 
 - Instructor: [Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang)
-- Time: Tue & Thu 1:00pm-2:15pm
-- Place
+- Time: TBA
+- Place: TBA
   + Rm. 1101, Bldg. E3-1. **YOUR PHYSICAL ATTENDANCE IS REQUIRED** unless announced otherwise.
-  + [Zoom room](https://kaist.zoom.us/my/jeehoon.kang) (if remote participation is absolutely necessary). The passcode is announced at KLMS.
+  <!-- + [Zoom room](https://kaist.zoom.us/my/jeehoon.kang) (if remote participation is absolutely necessary). The passcode is announced at KLMS. -->
   + [Youtube channel](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0). Turn on English subtitle at YouTube, if necessary.
 - Websites: <https://github.com/kaist-cp/cs420>, <https://gg.kaist.ac.kr/course/15/>
 - Announcements: in [issue
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
   + We assume you read each announcement within 24 hours.
   + We strongly recommend you to watch the repository.
-- TA: [Jungin Rhee](http://cp.kaist.ac.kr/jungin.rhee), [Haechan An](https://cp.kaist.ac.kr/haechan.an/)
-  + Office Hour: Fri 9:10am-10:10am, Room 4432, E3-1. It is not required, but if you want to come, do so by 9:15am. See [below](https://github.com/kaist-cp/cs420#rules) for office hour policy.
-    <!-- Fri 9:00am-12:00pm, [Zoom room](https://zoom.us/j/4842624821)(The passcode is same as the class). It is not required, but if you want to come, do so by 9:30am. See [below](#communication) for office hour policy. -->
-
+- TA: [Jaewoo Kim](https://cp.kaist.ac.kr/jaewoo.kim/) (Head TA), [Janggun Lee](https://cp.kaist.ac.kr/janggun.lee/)
+  + Office Hour: Fri 9:00am-10:00am, Room 4432, E3-1. It is not required, but if you want to come, do so by 9:15am. See [below](https://github.com/kaist-cp/cs420#rules) for office hour policy.
 
 
 ## Course description
