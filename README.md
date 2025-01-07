@@ -151,34 +151,16 @@ Make sure you're capable of using the following development tools:
 
 - [Visual Studio Code](https://code.visualstudio.com/) (optional): for developing your homework. If you prefer other editors, you're good to go.
 
-- You can connect to server by `ssh s<student-id>@rack.fearless.systems -p13001`, e.g., `ssh s20071163@rack.fearless.systems -p13001`.
+- [Single Sign On (SSO)](https://auth.fearless.systems/): Use the following SSO credentials to access [gg](https://gg.kaist.ac.kr) and the [development server](https://cloud.fearless.systems):
+    + id: KAIST student id (8-digit number)
+    + email: KAIST email address (@kaist.ac.kr)
+    + password: Reset it here: <https://auth.fearless.systems/if/flow/default-recovery-flow/>
+    + Log in to [gg](https://gg.kaist.ac.kr) using the "kaist-cp-class" option, and to the [development server](https://cloud.fearless.systems) using the "OpenID Connect" option.
 
-    + **IMPORTANT: Don't try to hack. Don't try to freeze the server. Please be nice.**
-
-    + Your initial password will be announced at <https://gg.kaist.ac.kr>.
-
-    + I require you to register public SSH keys to the server. (In September, we'll expire your password so that you can log in only via SSH keys.)
-      See [this tutorial](https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication/) for more information on SSH public key authentication.
-      Use `ed25519`.
-
-    + In your client, you may want to set your `~/.ssh/config` as follows for easier SSH access:
-
-      ```
-      Host cs420
-        Hostname rack.fearless.systems
-        Port 13001
-        User s20071163
-      ```
-
-      Then you can connect to the server by `ssh cs420`.
-
-    + Now you can [use it as a VSCode remote server as in the video](https://www.youtube.com/watch?v=TTVuUIhdn_g&list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0&index=3).
-
-    + Install [rustup](https://rustup.rs) in the server to begin working on Rust!
-
-      ```sh
-      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-      ```
+- [Development Server](https://cloud.fearless.systems/):
+    + **IMPORTANT: Do not attempt to hack or overload the server. Please use it responsibly.**
+    + Create and connect to a workspace to use the terminal or VSCode (after installation).
+    + We recommend using VSCode with the "Rust Analyzer" and "CodeLLDB" plugins.
 
     + Install necessary dependencies for KECC
 
@@ -196,16 +178,14 @@ Make sure you're capable of using the following development tools:
       pip install tqdm
       ```
 
-    + [NOTE: We recommend the `rust-analyzer` plugin instead of `rls`](https://github.com/rust-analyzer/rust-analyzer).
-
     + [NOTE: If permission denied error occurs when trying to install `CodeLLDB Extension` into the remote server](https://github.com/kaist-cp/cs420/issues/5),
       please follow the steps:
       1. Download [this file](https://github.com/vadimcn/vscode-lldb/releases/download/v1.5.0/codelldb-x86_64-linux.vsix) at the remote server.
-      1. Follow [the instructions](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) to install it.
+      2. Follow [the instructions](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) to install it.
 
     + [NOTE: If you cannot connect to the remote server via VSCode with `fail to create hard link` error message](https://github.com/kaist-cp/cs420/issues/91), please follow the steps:
       1. Close VSCode window and try to connect to the remote server via terminal(or cmd). If you encounter `Connection timed out` error message, try again after a few minutes.
-      1. Delete all the files in `~/.vscode-server/bin/`.
+      2. Delete all the files in `~/.vscode-server/bin/`.
 
 
 ## Grading & honor code
