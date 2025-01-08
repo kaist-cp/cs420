@@ -4,10 +4,9 @@
 
 - Instructor: [Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang)
 - Time: Tue/Thu 9:00-10:30
-- Place: TBA
-  + Rm. 1101, Bldg. E3-1. **YOUR PHYSICAL ATTENDANCE IS REQUIRED** unless announced otherwise.
+- Place: Rm. 1101, Bldg. E3-1. **YOUR PHYSICAL ATTENDANCE IS REQUIRED** unless announced otherwise.
   <!-- + [Zoom room](https://kaist.zoom.us/my/jeehoon.kang) (if remote participation is absolutely necessary). The passcode is announced at KLMS. -->
-  + [Youtube channel](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0). Turn on English subtitle at YouTube, if necessary.
+  <!-- + [Youtube channel](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0). Turn on English subtitle at YouTube, if necessary. -->
 - Websites: <https://github.com/kaist-cp/cs420>, <https://gg.kaist.ac.kr/course/15/>
 - Announcements: in [issue
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
