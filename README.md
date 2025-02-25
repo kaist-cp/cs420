@@ -12,7 +12,7 @@
   tracker](https://github.com/kaist-cp/cs420/issues?q=is%3Aissue+is%3Aopen+label%3Aannouncement)
   + We assume you read each announcement within 24 hours.
   + We strongly recommend you to watch the repository.
-- TA: [Jaewoo Kim](https://cp.kaist.ac.kr/jaewoo.kim/) (Head TA), [Janggun Lee](https://cp.kaist.ac.kr/janggun.lee/)
+- TA: [Jaewoo Kim](https://cp.kaist.ac.kr/jaewoo.kim/) (Head TA), [Janggun Lee](https://cp.kaist.ac.kr/janggun.lee/), [Minseong Jang](https://cp.kaist.ac.kr/minseong.jang/)
   + Office Hour: Fri 9:00am-10:00am, Room 4432, E3-1. It is not required, but if you want to come, do so by 9:15am. See [below](https://github.com/kaist-cp/cs420#rules) for office hour policy.
 
 
