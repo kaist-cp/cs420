@@ -66,7 +66,7 @@ As it will turn out, this compiler correctness theory will greatly help you effi
 
 ### Textbook
 
-- [Slides](https://docs.google.com/presentation/d/1SqtU-Cn60Sd1jkbO0OSsRYKPMIkul0eZoYG9KpMugFE/edit?usp=sharing).
+- [Slides](https://docs.google.com/presentation/d/1SqtU-Cn60Sd1jkbO0OSsRYKPMIkul0eZoYG9KpMugFE/edit?usp=sharing)
 
 - [KECC: KAIST Educational C Compiler](https://github.com/kaist-cp/kecc-public)
   + [Code Documentation](https://kaist-cp.github.io/kecc-public/kecc/)
