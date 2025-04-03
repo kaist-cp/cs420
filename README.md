@@ -211,9 +211,9 @@ the semester.
 
 - You are **permitted** to use ChatGPT or other LLMs.
 
-### Midterm and Final Exams (40%)
+### Final Exam (40%)
 
-- Dates & Times: April 15th (Tue), June 10th (Tue), 9:00-11:00
+- Dates & Times: June 10th (Tue), 9:00-11:00
 
 - The exams will evaluate your understanding of compiler theory.
 
